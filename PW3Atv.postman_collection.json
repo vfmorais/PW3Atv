@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "4471d77a-8d19-4c82-befd-568005a59f9c",
+		"name": "PW3Atv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/list",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Betania\",\r\n    \"sobrenome\": \"Dutra Chadi\",\r\n    \"data_nascimento\": \"18031988\",\r\n    \"rg\": \"123456780\",\r\n    \"cpf\": \"12345678901\",\r\n    \"email\": \"betania_chadi@gmail.com\",\r\n    \"telefone\": \"1141332223\",\r\n    \"celular\": \"11981234901\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/alter/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"alter",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inserir",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Francisco\",\r\n    \"sobrenome\": \"Bernardes Albuquerque\",\r\n    \"data_nascimento\": \"08091980\",\r\n    \"rg\": \"123456789\",\r\n    \"cpf\": \"12345678900\",\r\n    \"email\": \"francisco_albuquerque@gmail.com\",\r\n    \"telefone\": \"1141631212\",\r\n    \"celular\": \"11981812321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/insert",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/listID/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"listID",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
